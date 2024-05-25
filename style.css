@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+header{
+    background-color: #f0f0f0;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    padding: 10px 200px;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+}
+
+.logo{
+    text-decoration: none; 
+    color: #3a6cf4;
+    text-transform: uppercase;
+    font-size: 1.8em;
+    font-weight: 700;
+}
+
+.navigation a {
+    color: #3a6cf4;
+    font-size: 1.1em;
+    font-weight: 500;
+    margin-left: 30px;
+    text-decoration: none;
+    background-image: linear-gradient(to right, #007bff, #007bff); /* خلفية تمتد من اليسار إلى اليمين بلون أزرق */
+    background-position: 0 100%; /* تبدأ الخلفية من الجهة اليمنى للرابط */
+    background-repeat: no-repeat; /* تمنع تكرار الخلفية */
+    background-size: 0% 2px; /* الحجم الافتراضي للخلفية (العرض 0% والارتفاع 2 بكسل) */
+    transition: background-size 0.3s; /* لإضافة تأثير تدرجي أثناء تغيير حجم الخلفية */
+}
+
+.navigation ul :hover{
+    color: #4c00ff;
+    background-size: 100% 2px;
+}
+
+
+section{
+    padding: 100px 200px;
+}
+
+.main{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(img/SWE_backgrond.jpeg);
+    background-size: cover ;    
+    background-position: center;
+    background-attachment: fixed ;
+}
+
+.main h2{
+    color:white;
+    font-size: 1.4em;
+    font-weight: 500;
+}
+
+.main h2 span{
+    display: inline-block;
+    margin-top: 10px ;
+    color: #829ff4;
+    font-size: 2em;
+    font-weight: 600;
+    text-shadow: 2px 2px 4px rgba(0.5, 0.5, 0.5, 0.5);
+    z-index: 999;
+
+}
+
+.main h3{
+    color: white;
+    font-size: 1.3em;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.main-btn{
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1em;
+    display: inline-block;
+    padding: 0.9375em 2.1875em;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    transition: 0.5s;
+}
+
+.main-btn:hover{
+    background-color: #0a49f6;
+    transform: scale(1.1);
+}
+
+.social-icons a {
+    color:rgb(255, 255, 255);
+    font-size: 1.5em;
+    padding-right: 30px;
+    size: 40px;
+    text-decoration: none; /* لإزالة التزيين الافتراضي للروابط */  
+    transition: text-shadow 0.3s; /* لإضافة تأثير تدرجي عند تغيير تأثير النيون */
+}
+
+.social-icons a:hover {
+    text-shadow: 0 0 10px #00f, 0 0 20px #00f, 0 0 30px #00f; /* تأثير النيون بلون أزرق */
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    color: #3a6cf4;
+    font-size: 2em;
+    font-weight: 800;
+    margin-bottom: 30px ;
+
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}   
+
+.card {
+    background-color: #fff;
+    width: 20em;
+    box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
+    border-radius: 10px;
+    padding: 25px;
+    margin: 15px;
+    transition: 0.7s ease;
+}
+
+.card:hover{
+    transform: scale(1.1);
+}
+
+.icon{
+    color: #3a6cf4;
+    font-size: 6em;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.info h3{
+    color: #3a6cf4;
+    font-size: 1.5em;
+    margin: 10px;
+}
+
+.info{
+    text-align: center;
+}
+
+.projects {
+    background-color: rgb(26, 26, 26);
+}
+
+.project-card{
+    background-color: #fff;
+    border: 1px solid #fff;
+    min-height: 10em;
+    width: 19em;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 20px;
+    transition: 0.5s;
+}
+
+.project-card:hover{
+    transform: scale(1.1) ;
+}
+.project-card:hover .project-image{
+    opacity: 0.9;
+}
+
+.project-image img{
+    width: 100% ;
+}
+
+.project-info{
+    padding: 1em;
+}
+.project-category{
+    font-size: 0.9em;
+    margin-bottom: 5px;
+    color: black;
+}
